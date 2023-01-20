@@ -17,9 +17,10 @@ for filepath in filepaths:
     pdf.add_page()
     filename = Path(filepath).stem
 
+    # Add the name to the PDF
     pdf.set_font(family="Times", size=16, style="B")
     pdf.cell(w=50, h=8, txt=f"{filename.capitalize()}")
 
-
+# Produce the PDF
 pdf.output("Output.pdf")
 
