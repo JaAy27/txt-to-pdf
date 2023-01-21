@@ -21,7 +21,7 @@ for filepath in filepaths:
     pdf.set_font(family="Times", size=16, style="B")
     pdf.cell(w=50, h=8, txt=f"{filename.capitalize()}", ln=1)
 
-    # Get the content on each text file
+    # Get the content from each text file
     with open(filepath, "r") as file:
         content = file.read()
 
